@@ -31,6 +31,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:ports
+LIBS:Composite Video Amplifier-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -46,7 +48,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_01x05 J2
+L Video_IN J2
 U 1 1 5C1246EF
 P 3925 4150
 F 0 "J2" H 3925 4450 50  0000 C CNN
