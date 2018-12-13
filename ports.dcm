@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Output
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP Video
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
 $CMP Video_IN
 D Generic connector, single row, 01x05
 K connector

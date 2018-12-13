@@ -48,31 +48,16 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Video_IN J2
-U 1 1 5C1246EF
-P 3925 4150
-F 0 "J2" H 3925 4450 50  0000 C CNN
-F 1 "Video Input" H 3925 3850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 3925 4150 50  0001 C CNN
-F 3 "" H 3925 4150 50  0001 C CNN
-	1    3925 4150
-	-1   0    0    1   
-$EndComp
-$Comp
 L GND #PWR01
 U 1 1 5C124730
-P 4200 4425
-F 0 "#PWR01" H 4200 4175 50  0001 C CNN
-F 1 "GND" H 4200 4275 50  0000 C CNN
-F 2 "" H 4200 4425 50  0001 C CNN
-F 3 "" H 4200 4425 50  0001 C CNN
-	1    4200 4425
+P 4200 4325
+F 0 "#PWR01" H 4200 4075 50  0001 C CNN
+F 1 "GND" H 4200 4175 50  0000 C CNN
+F 2 "" H 4200 4325 50  0001 C CNN
+F 3 "" H 4200 4325 50  0001 C CNN
+	1    4200 4325
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 4425 4200 4350
-Wire Wire Line
-	4200 4350 4125 4350
 $Comp
 L VCC #PWR02
 U 1 1 5C124750
@@ -85,12 +70,8 @@ F 3 "" H 4200 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 3875 4200 4150
-Wire Wire Line
-	4200 4150 4125 4150
-Wire Wire Line
 	4125 4050 4650 4050
-Text Label 4225 4050 0    60   ~ 0
+Text Label 4125 4050 0    60   ~ 0
 VID_IN
 $Comp
 L C_Small C1
@@ -112,7 +93,7 @@ F 1 "1k" V 4800 4050 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4730 4050 50  0001 C CNN
 F 3 "" H 4800 4050 50  0001 C CNN
 	1    4800 4050
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4575 4050 4575 3775
@@ -163,7 +144,7 @@ F 1 "1k" V 5475 4275 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5405 4275 50  0001 C CNN
 F 3 "" H 5475 4275 50  0001 C CNN
 	1    5475 4275
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5475 3975 5475 4125
@@ -225,7 +206,7 @@ F 1 "68" V 5850 4475 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5780 4475 50  0001 C CNN
 F 3 "" H 5850 4475 50  0001 C CNN
 	1    5850 4475
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5850 3700 5850 3850
@@ -234,7 +215,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 4625 5850 4775
 Wire Wire Line
-	5475 4700 7300 4700
+	5475 4700 7225 4700
 Connection ~ 5850 4700
 $Comp
 L 2N3906 Q2
@@ -279,87 +260,82 @@ F 1 "75" V 6450 4275 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 4275 50  0001 C CNN
 F 3 "" H 6450 4275 50  0001 C CNN
 	1    6450 4275
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6450 3975 6450 4125
-Wire Wire Line
-	6450 4050 7375 4050
 Connection ~ 6450 4050
 Wire Wire Line
 	6450 4700 6450 4425
 $Comp
-L Conn_01x02 J1
-U 1 1 5C125EFF
-P 3925 2725
-F 0 "J1" H 3925 2825 50  0000 C CNN
-F 1 "Audio Input" H 3925 2525 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3925 2725 50  0001 C CNN
-F 3 "" H 3925 2725 50  0001 C CNN
-	1    3925 2725
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR05
-U 1 1 5C126148
-P 4200 2800
-F 0 "#PWR05" H 4200 2550 50  0001 C CNN
-F 1 "GND" H 4200 2650 50  0000 C CNN
-F 2 "" H 4200 2800 50  0001 C CNN
-F 3 "" H 4200 2800 50  0001 C CNN
-	1    4200 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2800 4200 2725
-Wire Wire Line
-	4200 2725 4125 2725
-$Comp
 L R R8
 U 1 1 5C12628A
-P 4800 2625
-F 0 "R8" V 4880 2625 50  0000 C CNN
-F 1 "10k" V 4800 2625 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4730 2625 50  0001 C CNN
-F 3 "" H 4800 2625 50  0001 C CNN
-	1    4800 2625
-	0    1    1    0   
+P 4800 5050
+F 0 "R8" V 4880 5050 50  0000 C CNN
+F 1 "10k" V 4800 5050 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4730 5050 50  0001 C CNN
+F 3 "" H 4800 5050 50  0001 C CNN
+	1    4800 5050
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4125 2625 4650 2625
-NoConn ~ 4125 3950
-NoConn ~ 4125 4250
 $Comp
-L Conn_01x04 J3
+L Output J2
 U 1 1 5C1265F4
-P 7575 3950
-F 0 "J3" H 7575 4150 50  0000 C CNN
-F 1 "Output" H 7575 3650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7575 3950 50  0001 C CNN
-F 3 "" H 7575 3950 50  0001 C CNN
-	1    7575 3950
+P 7575 4250
+F 0 "J2" H 7575 4450 50  0000 C CNN
+F 1 "Output" H 7575 3950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7575 4250 50  0001 C CNN
+F 3 "" H 7575 4250 50  0001 C CNN
+	1    7575 4250
 	1    0    0    1   
 $EndComp
 Text Label 6675 4050 0    60   ~ 0
 VID_OUT
 Wire Wire Line
-	7375 3750 7300 3750
-Wire Wire Line
-	7300 3750 7300 2625
-Wire Wire Line
-	7300 2625 4950 2625
-Text Label 4200 2625 0    60   ~ 0
+	7300 5050 4950 5050
+Text Label 4125 4150 0    60   ~ 0
 AUD_IN
-Text Label 5100 2625 0    60   ~ 0
+Text Label 6675 5050 0    60   ~ 0
 AUD_OUT
-Wire Wire Line
-	7375 3950 7300 3950
-Wire Wire Line
-	7300 4700 7300 3850
 Connection ~ 6450 4700
-Wire Wire Line
-	7300 3850 7375 3850
-Connection ~ 7300 3950
 Text Notes 7025 6750 0    60   ~ 0
 Based on composite video modification for Atari 2600 by user simon.plata on AtariAge\nforums. Redesigned PCB to match my VDU projects.
+$Comp
+L Video J1
+U 1 1 5C129CEB
+P 3925 4150
+F 0 "J1" H 3925 4350 50  0000 C CNN
+F 1 "Video" H 3925 3850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3925 4150 50  0001 C CNN
+F 3 "" H 3925 4150 50  0001 C CNN
+	1    3925 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4125 3950 4200 3950
+Wire Wire Line
+	4200 3950 4200 3875
+Wire Wire Line
+	4200 4250 4125 4250
+Wire Wire Line
+	4200 4250 4200 4325
+Wire Wire Line
+	6450 4050 7375 4050
+Wire Wire Line
+	7225 4150 7375 4150
+Wire Wire Line
+	4125 4150 4375 4150
+Wire Wire Line
+	4650 5050 4375 5050
+Wire Wire Line
+	4375 5050 4375 4150
+Wire Wire Line
+	7225 4700 7225 4150
+Wire Wire Line
+	7375 4250 7225 4250
+Connection ~ 7225 4250
+Wire Wire Line
+	7375 4350 7300 4350
+Wire Wire Line
+	7300 4350 7300 5050
 $EndSCHEMATC
