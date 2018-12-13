@@ -1,1 +1,3 @@
-Composite Video Amplifier
+# Composite Video Amplifier
+
+Based on schematic by user simon.plata over on [atariage.com](http://atariage.com/forums/topic/271678-simple-diy-composite-video-mod/), originally intended for use as composite video modification for the Atari 2600. I designed this PCB around the same schematic hoping to use it as a starting point for the video amplification circuits on my VDU project, though it still retains the same inputs and outputs so it can still be used as a composite mod for consoles and computers with similar display circuitry.
